@@ -1,7 +1,5 @@
 package com.example.lhtest1student1218190;
 
-import jdk.internal.access.JavaLangInvokeAccess;
-
 import java.util.ArrayList;
 
 public class ShoppingCart {
@@ -12,7 +10,7 @@ public class ShoppingCart {
         items = new ArrayList<>();
     }
 
-    public void addItem(Component item){
+    public void addItem(Component item) {
         items.add(item);
     }
 
@@ -33,5 +31,7 @@ public class ShoppingCart {
     }
 
 
-
+    public Object getTableSummary() {
+        return "The cart has " + items.size() + " The total price is: " + String.format("%.2f", getTotalPrice());
+    }
 }
