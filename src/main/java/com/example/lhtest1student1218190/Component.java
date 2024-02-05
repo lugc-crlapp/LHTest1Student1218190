@@ -11,6 +11,15 @@ private String name;
         this.price = price;
     }
 
+       public void setName(String name) {
+        if (name.length() < 3) {
+            throw new IllegalArgumentException("Name must be at least 3 characters long");
+        }
+        this.name = name;
+    }
+
+
+
 
 
 }
