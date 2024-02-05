@@ -24,6 +24,17 @@ private String name;
         }
         this.price = price;
     }
+     public void setManufacturer(String manufacturer) {
+        String[] validManufacturers = {"3Com","Acer","Arctic","AMD", "Asus","Apple Inc.","Bose","Cooler Master", "Hitachi", "Intel", "Logitech", "Marvell", "Nvidia", "Qualcomm", "Samsung","Tyan","Fujitsu","MSI","Seagate","Toshiba", "Western Digital", "XTREEM"};
+        for (String validManufacturer : validManufacturers) {
+            if (validManufacturer.equals(manufacturer)) {
+                this.manufacturer = manufacturer;
+                return;
+            }
+        }
+        throw new IllegalArgumentException("Invalid manufacturer");
+    }
+
 
 
 
