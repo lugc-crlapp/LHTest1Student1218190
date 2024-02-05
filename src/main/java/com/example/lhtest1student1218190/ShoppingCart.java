@@ -32,6 +32,6 @@ public class ShoppingCart {
 
 
     public Object getTableSummary() {
-        return "The cart has " + items.size() + " The total price is: " + String.format("%.2f", getTotalPrice());
+        return "The cart has " + items.size() + " Items and the total price is: " + String.format("%.2f", getTotalPrice());
     }
 }

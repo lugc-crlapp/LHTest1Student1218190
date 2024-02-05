@@ -25,14 +25,14 @@ private String name;
         this.price = price;
     }
      public void setManufacturer(String manufacturer) {
-        String[] validManufacturers = {"3Com","Acer","Arctic","AMD", "Asus","Apple Inc.","Bose","Cooler Master", "Hitachi", "Intel", "Logitech", "Marvell", "Nvidia", "Qualcomm", "Samsung","Tyan","Fujitsu","MSI","Seagate","Toshiba", "Western Digital", "XTREEM"};
+        String[] validManufacturers = {"3Com","Acer","Arctic","AMD", "Asus","Bose","Cooler Master", "Hitachi", "Intel", "Logitech", "Nvidia", "Qualcomm","MSI","Seagate", "Western Digital", "XTREEM"};
         for (String validManufacturer : validManufacturers) {
             if (validManufacturer.equals(manufacturer)) {
                 this.manufacturer = manufacturer;
                 return;
             }
         }
-        throw new IllegalArgumentException("Invalid manufacturer");
+        throw new IllegalArgumentException("Invalid manufacturer please enter a valid manufacturer");
     }
 
     @Override
@@ -42,10 +42,6 @@ private String name;
 
     public double getPrice() {
         return price;
-    }
-
-    private Object getTotalPrice() {
-        return null;
     }
 
     public String getName() {
