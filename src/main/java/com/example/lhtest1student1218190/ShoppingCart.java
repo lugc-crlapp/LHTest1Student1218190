@@ -14,5 +14,14 @@ public class ShoppingCart {
         items.add(item);
     }
 
-    
+    public double getTotalPrice() {
+        double totalPrice = 0;
+        for (Component item : items) {
+            totalPrice += item.getPrice();
+        }
+        return totalPrice;
+    }
+
+
+
 }
