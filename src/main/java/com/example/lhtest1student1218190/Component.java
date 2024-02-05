@@ -18,6 +18,13 @@ private String name;
         this.name = name;
     }
 
+        public void setPrice(double price) {
+        if (price < 0 || price > 10000) {
+            throw new IllegalArgumentException("Price must be between 0 and 10,000");
+        }
+        this.price = price;
+    }
+
 
 
 
