@@ -35,6 +35,11 @@ private String name;
         throw new IllegalArgumentException("Invalid manufacturer");
     }
 
+    @Override
+    public String toString() {
+        return name + "-" + manufacturer + ", price: $" + String.format("%.2f", price);
+    }
+
 
 
 
