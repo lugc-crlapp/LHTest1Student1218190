@@ -10,9 +10,9 @@ public class ShoppingCart {
         items = new ArrayList<>();
     }
 
+    public void addItem(Component item){
+        items.add(item);
+    }
+
     
-
-
-
-
 }

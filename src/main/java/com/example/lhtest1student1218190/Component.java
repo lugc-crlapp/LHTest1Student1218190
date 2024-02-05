@@ -40,9 +40,15 @@ private String name;
         return name + "-" + manufacturer + ", price: $" + String.format("%.2f", price);
     }
 
+    public double getPrice() {
+        return price;
+    }
 
+    private Object getTotalPrice() {
+        return null;
+    }
 
-
-
-
+    public String getName() {
+        return name;
+    }
 }
